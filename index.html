@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="app.css">
+    <title>Hindustan Times</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <input type="text" name="Searchbar" id="Search" placeholder="Search">
+            <!-- <img src="https://res.cloudinary.com/dkn6an4bw/image/upload/v1723917410/Hindustan_Times_Logo_hdqwvl.jpg" id="Logo" alt="Logo"> -->
+            <img src="https://www.hindustantimes.com/static-content/1y/ht/ht-logo.png" id="Logo" alt="Logo">
+    
+        
+            <button class="hamburger" aria-label="Toggle Navigation">
+                &#9776;
+            </button>
+    
+        
+            <ul class="List">
+                <li>Games</li>
+                <li>E-Paper</li>
+                <li><button>Sign In</button></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="slide">
+        <!-- <marquee direction="left" class=></marquee> -->
+
+    </div>
+
+    
+
+    <main>
+        <div id="side-3">
+            <!-- <h1 id="h2">---Top News---</h1>  -->
+            <!-- News content will be displayed here -->
+        </div>
+        
+        <section id="side-2">
+            <h1 id="h2">---Top News---</h1> 
+
+        </section>
+
+      
+        <div id="container">
+            <section id="weather-info">
+                <h1>Current Weather</h1>
+                <!-- Weather data will be displayed here -->
+            </section>
+        
+            
+            <section id="side-1">
+                <h1 id="h1">--Latest News--</h1>
+                
+            </section>
+        </div>
+        
+        <!-- <button id="btn">Fetch</button> -->
+    </main>
+
+</body>
+
+<script src="logic.js">
+    // document.getElementById('btn').addEventListener('click', () => {
+    //     let NewsApi = 'https://newsapi.org/v2/everything?q=tesla&from=2024-07-23&sortBy=publishedAt&apiKey=fabd8c07281d4c05b984c596954536da';
+
+    //     fetch(NewsApi)
+    //         .then(response => response.json())
+    //         .then(data => {
+    //             if (data.status === 'ok') {
+    //                 let newsContainer = document.getElementById('side-1');
+    //                 // newsContainer.innerHTML = ''; s
+
+    //                 data.articles.forEach(article => {
+    //                     let articleElement = document.createElement('article');
+
+    //                     let title = document.createElement('h2');
+    //                     title.textContent = article.title;
+
+    //                     let description = document.createElement('p');
+    //                     description.textContent = article.description;
+
+    //                     let image = document.createElement('img');
+    //                     image.src = article.urlToImage;
+
+    //                     articleElement.appendChild(title);
+    //                     articleElement.appendChild(description);
+    //                     articleElement.appendChild(image);
+
+    //                     newsContainer.appendChild(articleElement);
+    //                 });
+    //             } else {
+    //                 document.getElementById('side-1').textContent = `Oops! Something went wrong!`;
+    //             }
+    //         })
+    //         .catch(error => {
+    //             document.getElementById('side-1').textContent = `Oops! Something went wrong!`;
+    //             console.error("Error:", error);
+    //         });
+    // });
+</script>
+
+</html>
